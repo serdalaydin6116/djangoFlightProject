@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     #third party apps:
     'rest_framework',
     'drf_yasg',
+    "debug_toolbar",
     #my apps:
 
 ]
