@@ -25,7 +25,7 @@ SECRET_KEY = config ('SECRET_KEY')
 
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,8 +40,12 @@ INSTALLED_APPS = [
     #third party apps:
     'rest_framework',
     'drf_yasg',
-    # "debug_toolbar",
+    'dj_rest_auth',
+    'rest_framework.authtoken',
+
+    
     #my apps:
+    'users',
 
 ]
 
