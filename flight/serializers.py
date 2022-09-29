@@ -27,10 +27,11 @@ class ReservationSerializer(serializers.ModelSerializer):
     flight=serializers.StringRelatedField()  #default =readonly
     flight_id=serializers.IntegerField(write_only=True) #create yaparken bunu getir
     user=serializers.StringRelatedField()  #default =readonly
-    user_id=serializers.IntegerField(write_only=True) #create yaparken bunu getir
+    user_id=serializers.IntegerField(write_only=False) #create yaparken bunu getir
     class Meta:
         model=Reservation
-        fields= ('id',
+        fields= (
+        'id',
         "flight",
         "flight_id",
         "user",
