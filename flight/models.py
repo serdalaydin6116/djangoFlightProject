@@ -30,4 +30,4 @@ class Reservation(models.Model):
     #reservations.passenger.all() parente ulaşırız
     #passenger.reservations.all() childa ulaşırız
 
-    flight=models.ForeignKey(Flight, on_delete=models.CASCADE)
+    flight=models.ForeignKey(Flight, on_delete=models.CASCADE, related_name='reservation')
